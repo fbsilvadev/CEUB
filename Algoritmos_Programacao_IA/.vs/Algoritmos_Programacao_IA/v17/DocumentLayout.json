@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\src_pessoal\\CEUB\\Algoritmos_Programacao_IA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8C2E6E4-F7F0-4C5E-AFC3-6436622CFB4F}|Sistematizacao\\Sistematizacao.pyproj|D:\\src_pessoal\\CEUB\\Algoritmos_Programacao_IA\\Sistematizacao\\Sistematizacao.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B8C2E6E4-F7F0-4C5E-AFC3-6436622CFB4F}|Sistematizacao\\Sistematizacao.pyproj|solutionrelative:Sistematizacao\\Sistematizacao.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{f2bd8fb8-fc94-3dae-a733-fd993c73cc87}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{7f40df72-066b-4810-a08b-c0fbed76c948}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sistematizacao.py",
+              "DocumentMoniker": "D:\\src_pessoal\\CEUB\\Algoritmos_Programacao_IA\\Sistematizacao\\Sistematizacao.py",
+              "RelativeDocumentMoniker": "Sistematizacao\\Sistematizacao.py",
+              "ToolTip": "D:\\src_pessoal\\CEUB\\Algoritmos_Programacao_IA\\Sistematizacao\\Sistematizacao.py",
+              "RelativeToolTip": "Sistematizacao\\Sistematizacao.py",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-05-08T18:32:15.452Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1883,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
