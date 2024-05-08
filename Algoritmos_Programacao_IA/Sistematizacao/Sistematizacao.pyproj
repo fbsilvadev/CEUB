@@ -21,7 +21,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Dados.py" />
     <Compile Include="Sistematizacao.py" />
+    <Compile Include="SistematizacaoV2.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="credit_record.csv" />
+    <Content Include="credit_risk_dataset.csv" />
+    <Content Include="dados_credito.csv" />
+    <Content Include="dados_de_treinamento.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
