@@ -23,61 +23,52 @@
 # O sistema deve ser implementado em Python e deve ser organizado em funcoes, implementando a arvore de decisso em anexo.
 
 
-import pandas as pd #To work with dataset
-import numpy as np #Math library
-from sklearn import tree, metrics
-import seaborn as sns #Graph library that use matplot in background
-import matplotlib.pyplot as plt #to plot some parameters in seaborn
-
-import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+import pandas as pd
 
-# referencia https://github.com/Erikfernandoms/ArvoreDecisao/tree/main/FEI-CC7711-ArvoreDecisao-main
-# referencia https://github.com/tiagob85/ArvoreDecisaoPython
+# dados do cliente
+def coletar_dados_cliente():
+    print("Por favor, forneca as seguintes informacoes:")
+    idade = int(input("Idade: "))
+    renda_mensal = float(input("Renda Mensal (em R$): "))
+    historico_credito = int(input("Historico de Credito (0 - Ruim. 1 - Bom): ")) 
+    historico_emprego = int(input("Historico de Emprego (0 - Ruim. 1 - Bom): "))
+    
+    return idade, renda_mensal, historico_credito, historico_emprego
 
-#
-# DATASET: https://www.kaggle.com/datasets/laotse/credit-risk-dataset
-#
+# Carregar os dados de treinamento
+data = pd.read_csv('dados_de_treinamento_num.csv')
 
-# Carregando o conjunto de dados
-dados = pd.read_csv('dados_credito.csv')
+# Separar os dados em features (caracteristicas) e target (alvo)
+X = data.drop('Aprovado', axis=1) # Features
+y = data['Aprovado'] # Target
 
-# Pré-processamento de dados
-# ... (tratamento de dados ausentes, outliers, etc.)
+# Dividir os dados em conjuntos de treinamento e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Separação em conjuntos de treinamento e teste
-X = dados[['renda', 'score_credito', 'historico_pagamentos']]
-y = dados['aprovado']
+# Criar e treinar o modelo de arvore de decisao
+model = DecisionTreeClassifier()
+model.fit(X_train, y_train)
 
-# Treinamento da árvore de decisão
-modelo = DecisionTreeClassifier()
-modelo.fit(X, y)
+# Funcao para prever se o emprestimo sera aprovado ou nao para um cliente especifico
+def aprovar_emprestimo(idade, renda_mensal, historico_credito, historico_emprego):
+    # Converter historico de credito e emprego em variaveis
+    #historico_credito_bin = 1 if historico_credito == 'bom' else 0
+    #historico_emprego_bin = 1 if historico_emprego == 'estavel' else 0
+    # Preparar os dados do cliente para previsao
+    dados_cliente = [[idade, renda_mensal, historico_credito, historico_emprego]]
+    # Fazer a previsao
+    previsao = model.predict(dados_cliente)
+    if previsao[0] == 1:
+        return "Emprestimo Aprovado"
+    else:
+        return "Emprestimo Negado"
 
-# Função para análise de crédito individual
-def analisar_credito(renda, score_credito, historico_pagamentos):
-  novo_cliente = pd.DataFrame([[renda, score_credito, historico_pagamentos]], columns=X.columns)
-  predicao = modelo.predict(novo_cliente)
+# Coletar os dados do cliente
+idade, renda_mensal, historico_credito, historico_emprego = coletar_dados_cliente()
 
-  if predicao[0] == 1:
-    # Cliente aprovado
-    taxa_juros = 0.1  # Taxa de juros estimada
-    valor_maximo = 10000  # Valor máximo do empréstimo estimado
-    resultado = "Crédito aprovado!"
-  else:
-    # Cliente reprovado
-    taxa_juros = 0
-    valor_maximo = 0
-    resultado = "Crédito não aprovado."
-
-  return resultado, taxa_juros, valor_maximo
-
-# Exemplo de uso
-renda_cliente = 5000
-score_cliente = 700
-historico_cliente = "Bom"
-
-resultado, taxa_juros, valor_maximo = analisar_credito(renda_cliente, score_cliente, historico_cliente)
-
-print(resultado)
-print(f"Taxa de juros: {taxa_juros:.2f}%")
-print(f"Valor máximo do empréstimo: R$ {valor_maximo:.2f}")
+# Fazer a
+resultado = aprovar_emprestimo(idade, renda_mensal, historico_credito, historico_emprego)
+print("Resultado da analise de credito:", resultado)

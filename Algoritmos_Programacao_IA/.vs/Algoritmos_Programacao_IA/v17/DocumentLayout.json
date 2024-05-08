@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B8C2E6E4-F7F0-4C5E-AFC3-6436622CFB4F}|Sistematizacao\\Sistematizacao.pyproj|D:\\src_pessoal\\CEUB\\Algoritmos_Programacao_IA\\Sistematizacao\\Dados.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{B8C2E6E4-F7F0-4C5E-AFC3-6436622CFB4F}|Sistematizacao\\Sistematizacao.pyproj|solutionrelative:Sistematizacao\\Dados.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8C2E6E4-F7F0-4C5E-AFC3-6436622CFB4F}|Sistematizacao\\Sistematizacao.pyproj|D:\\src_pessoal\\CEUB\\Algoritmos_Programacao_IA\\Sistematizacao\\SistematizacaoV2.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{B8C2E6E4-F7F0-4C5E-AFC3-6436622CFB4F}|Sistematizacao\\Sistematizacao.pyproj|solutionrelative:Sistematizacao\\SistematizacaoV2.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -71,26 +67,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SistematizacaoV2.py",
-              "DocumentMoniker": "D:\\src_pessoal\\CEUB\\Algoritmos_Programacao_IA\\Sistematizacao\\SistematizacaoV2.py",
-              "RelativeDocumentMoniker": "Sistematizacao\\SistematizacaoV2.py",
-              "ToolTip": "D:\\src_pessoal\\CEUB\\Algoritmos_Programacao_IA\\Sistematizacao\\SistematizacaoV2.py",
-              "RelativeToolTip": "Sistematizacao\\SistematizacaoV2.py",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAADEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2024-05-08T20:17:13.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Sistematizacao.py",
               "DocumentMoniker": "D:\\src_pessoal\\CEUB\\Algoritmos_Programacao_IA\\Sistematizacao\\Sistematizacao.py",
               "RelativeDocumentMoniker": "Sistematizacao\\Sistematizacao.py",
               "ToolTip": "D:\\src_pessoal\\CEUB\\Algoritmos_Programacao_IA\\Sistematizacao\\Sistematizacao.py",
               "RelativeToolTip": "Sistematizacao\\Sistematizacao.py",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACIAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2024-05-08T18:32:15.452Z",
               "EditorCaption": ""

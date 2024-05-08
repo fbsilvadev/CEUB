@@ -23,7 +23,6 @@
   <ItemGroup>
     <Compile Include="Dados.py" />
     <Compile Include="Sistematizacao.py" />
-    <Compile Include="SistematizacaoV2.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="credit_record.csv" />
